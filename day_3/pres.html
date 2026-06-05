@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C Programming Presentation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.slide{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    color:white;
+}
+
+.slide1{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.slide2{
+    background:linear-gradient(135deg,#8e2de2,#4a00e0);
+}
+
+.slide3{
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+}
+
+.slide4{
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+h1{
+    font-size:70px;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.4);
+    animation:fadeIn 2s ease;
+}
+
+h2{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+p{
+    font-size:24px;
+    max-width:800px;
+    line-height:1.6;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:250px;
+    padding:20px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+ul{
+    text-align:left;
+    font-size:22px;
+    line-height:1.8;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 25px;
+    background:white;
+    color:#333;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Slide 1 -->
+<section class="slide slide1">
+    <h1>C Programming Language</h1>
+    <p>
+        A powerful, fast, and widely used programming language
+        developed by Dennis Ritchie in 1972.
+    </p>
+    <a href="#slide2" class="btn">Explore →</a>
+</section>
+
+<!-- Slide 2 -->
+<section class="slide slide2" id="slide2">
+    <h2>Key Features of C</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>⚡ Fast</h3>
+            <p>High execution speed and efficiency.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Portable</h3>
+            <p>Runs on multiple platforms.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧩 Structured</h3>
+            <p>Supports modular programming.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔧 Powerful</h3>
+            <p>Supports pointers and memory management.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Slide 3 -->
+<section class="slide slide3">
+    <h2>Applications of C</h2>
+
+    <ul>
+        <li>Operating Systems (Linux, Unix)</li>
+        <li>Embedded Systems & IoT</li>
+        <li>Database Management Systems</li>
+        <li>Compilers & Interpreters</li>
+        <li>Game Development</li>
+        <li>Networking Applications</li>
+    </ul>
+
+</section>
+
+<!-- Slide 4 -->
+<section class="slide slide4">
+    <h2>Why Learn C?</h2>
+
+    <p>
+        C is the foundation of many modern programming languages
+        such as C++, Java, and Python. Learning C helps you
+        understand programming concepts, memory management,
+        and problem-solving skills.
+    </p>
+
+    <br><br>
+
+    <h1>Thank You!</h1>
+</section>
+
+</body>
+</html>

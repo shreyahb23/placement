@@ -1,0 +1,10 @@
+arr = [10,20,50,60]
+arr.insert(2,30)
+arr.insert(3,40)
+print("After insertion")
+arr.append(70)
+print("After append:",arr)
+arr.remove(20)
+print("After remove(30)",arr)
+arr.count(arr)
+print("length of array:",len(arr))
